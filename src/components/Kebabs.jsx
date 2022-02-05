@@ -1,4 +1,5 @@
 import React from 'react';
+import React from 'react';
 import {Pizza,Comida1} from '../Arrays/Comida';
 import { Card, Container, Table, Row, Col } from 'react-bootstrap';
 
@@ -7,7 +8,7 @@ class ArchivoJugar extends React.Component{
   render (){
     return(
       <div> 
-          <h1>Comida: {Comida1[0].Nombre}</h1>
+          <h1>Comida: {Comida1[1].Nombre}</h1>
           <br/>
           <h2>Ingredientes</h2>
           <br/>
@@ -34,8 +35,7 @@ class ArchivoJugar extends React.Component{
                );       
             }
             )
-          }
-                    
+          }    
                 </tbody>
               </Table>
             </Col>
