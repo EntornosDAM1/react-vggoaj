@@ -1,24 +1,31 @@
-import ArchivoJugar from '../components/ArchivoJugar'
-import Hamburguesas from '../components/Hamburguesas'
+import Pizza from '../components/Pizza'
+import {Hamburguesas} from '../components/Hamburguesas'
 import Kebabs from '../components/Kebabs'
+import Home from '../components/Home';
 
-export const header=[
+export const header = [
   {
-    id:1,
-    title:'Pizzas',
-    path: '/ArchivoJugar',
-    component:ArchivoJugar,
+    id: 1,
+    path: '/',
+    title: 'Home',
+    component: Home,
   },
   {
-    id:2,
-    title:'Hamburguesas',
-    path: '../components/Hamburguesas',
-    component:Hamburguesas,
+    id: 2,
+    path: '/pizza',
+    title: 'Pizza',
+    component: Pizza,
   },
   {
     id: 3,
+    path: '/Hamburguesas',
+    title: 'Hamburguesas',
+    component: Hamburguesas,
+  },
+  {
+    id: 4,
     path: '/Kebabs',
-    title: 'Kebab',
+    title: 'Kebabs',
     component: Kebabs,
-  }
+  },
 ];

@@ -1,9 +1,13 @@
 import React from 'react';
-import {Comida1, hamburguesa} from '../Arrays/Comida';
+import {Comida1,  hamburguesaArray} from '../Arrays/Comida';
 import {  Container, Table, Row, Col } from 'react-bootstrap';
 
 
 class Hamburguesa extends React.Component{
+  constructor(props){
+    super(props);
+  }
+
   render (){
     return(
       <div> 
@@ -24,7 +28,7 @@ class Hamburguesa extends React.Component{
                 </thead>
                 <tbody>
                 {
-            hamburguesa.map((item) =>{
+            hamburguesaArray.map((item) =>{
                return (
                  <td>
                    <tr>

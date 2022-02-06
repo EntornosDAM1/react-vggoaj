@@ -10,7 +10,7 @@ export const Comida1=[
 }
 ];
    
-export const Pizza=[
+export const PizzaArray=[
   {
     Ingrediente:'Queso'
   },
@@ -21,7 +21,7 @@ export const Pizza=[
     Ingrediente: 'Jamon'
   } 
 ];
-export const kebab=[
+export const kebabArray=[
   {
     Ingrediente:'Carne'
   },
@@ -32,7 +32,7 @@ export const kebab=[
     Ingrediente: 'Patatas'
   } 
 ];
-export const hamburguesa=[
+export const hamburguesaArray=[
   {
     Ingrediente:'Queso'
   },
