@@ -2,6 +2,7 @@ import Pizza from '../components/Pizza'
 import Hamburguesas from '../components/Hamburguesas'
 import Kebabs from '../components/Kebabs'
 import Home from '../components/Home';
+import APIArray from '../components/APIArray';
 
 export const header = [
   {
@@ -28,4 +29,10 @@ export const header = [
     title: 'Kebabs',
     component: Kebabs,
   },
+  {
+    id:5,
+    path:'/APIArray',
+    title: 'ApiArray',
+    component: APIArray,
+  }
 ];

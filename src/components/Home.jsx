@@ -41,7 +41,8 @@ class Home extends React.Component{
     ) {
       return (
         <div className="centrado">
-          <h1>Bienvenido! {this.state.user}</h1>
+          <br/>
+          <h1>Bienvenido a mi pizzeria, {this.state.user}.</h1>
         </div>
       );
     } else {
@@ -49,16 +50,16 @@ class Home extends React.Component{
         <div className="centrado">
           <h1>Bienvenido! {}</h1>
           <br/>
-          <Container>
+          <Container >
             <Form>
-              <Form.Group className="mb-3" controlId="formBasicEmail">
+              <Form.Group  controlId="formBasicEmail">
                 <Form.Label>Nombre de usuario o email:</Form.Label>
                 <Form.Control  type="email"  ref={this.inputUser} />
               </Form.Group>
               <br/>
-              <Form.Group className="mb-3" controlId="formBasicPassword">
+              <Form.Group  controlId="formBasicPassword">
                 <Form.Label>Contraseña</Form.Label>
-                <Form.Control type="password"   ref={this.inputPass} />
+                <Form.Control type="text"   ref={this.inputPass} />
               <br/>
               </Form.Group>
               <br/>
