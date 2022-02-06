@@ -1,5 +1,5 @@
 import Pizza from '../components/Pizza'
-import {Hamburguesas} from '../components/Hamburguesas'
+import Hamburguesas from '../components/Hamburguesas'
 import Kebabs from '../components/Kebabs'
 import Home from '../components/Home';
 

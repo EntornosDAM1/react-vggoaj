@@ -7,6 +7,11 @@ export const Comida1=[
   Nombre:'Kebab',
   Calortias:120,
   Tipo: 'Fast Food'
+},
+{
+  Nombre:'Hamburguesa',
+  Calortias:120,
+  Tipo: 'Fast Food'
 }
 ];
    
