@@ -1,6 +1,8 @@
 import React from 'react';
 import {Comida1,  hamburguesaArray} from '../Arrays/Comida';
 import {  Container, Table, Row, Col } from 'react-bootstrap';
+import justifyContent from 'react-bootstrap';
+import {imagen} from '../css/imagen';
 
 
 class Hamburguesa extends React.Component{
@@ -10,45 +12,24 @@ class Hamburguesa extends React.Component{
 
   render (){
     return(
-      <div> 
+      <div className="centrado"> 
           <h1>Comida: {Comida1[2].Nombre}</h1>
+          <img style={{width: 300, height: 200}} src={Comida1[2].imagen}/>
           <br/>
-          <h2>Ingredientes</h2>
-          <br/>
-          <Container>
-          <Row>
-            <Col lg={10} md={6}>
-              <Table responsive striped>
-                <thead>
-                  <tr>
-                    <th>Ingrediente</th>
-                    <th>Ingrediente</th>
-                    <th>Ingrediente</th>
-                  </tr>
-                </thead>
-                <tbody>
+          <h1>Ingredientes</h1>
                 {
-            hamburguesaArray.map((item) =>{
-               return (
-                 <td>
-                   <tr>
-                    {item.Ingrediente}
-                  </tr>
-                </td>
-               );       
-            }
-            )
-          }
+                  hamburguesaArray.map((item) =>{
+                    return (
+                          <h2 className="colorIngredientes">{item.Ingrediente}</h2>
+                    );       
+                  }
+                  )
+                }
                     
-                </tbody>
-              </Table>
-            </Col>
-          </Row>  
-          </Container>
-            
+              
+        
       </div> 
-    );
-      
+    );      
   }
 }
 export default Hamburguesa;
