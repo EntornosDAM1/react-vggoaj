@@ -3,7 +3,7 @@ import {Pizza,Comida1} from '../Arrays/Comida';
 import { Card, Container, Table, Row, Col } from 'react-bootstrap';
 
 
-class ArchivoJugar extends React.Component{
+class Home extends React.Component{
   render (){
     return(
       <div> 
@@ -47,4 +47,4 @@ class ArchivoJugar extends React.Component{
       
   }
 }
-export default ArchivoJugar;
+export default Home;

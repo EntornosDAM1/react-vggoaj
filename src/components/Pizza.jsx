@@ -1,13 +1,13 @@
 import React from 'react';
-import {Comida1, hamburguesa} from '../Arrays/Comida';
-import {  Container, Table, Row, Col } from 'react-bootstrap';
+import {Pizza,Comida1} from '../Arrays/Comida';
+import { Container, Table, Row, Col } from 'react-bootstrap';
 
 
-class Hamburguesa extends React.Component{
+class Pizza extends React.Component{
   render (){
     return(
       <div> 
-          <h1>Comida: {Comida1[2].Nombre}</h1>
+          <h1>Comida: {Comida1[0].Nombre}</h1>
           <br/>
           <h2>Ingredientes</h2>
           <br/>
@@ -24,7 +24,7 @@ class Hamburguesa extends React.Component{
                 </thead>
                 <tbody>
                 {
-            hamburguesa.map((item) =>{
+            Pizza.map((item) =>{
                return (
                  <td>
                    <tr>
@@ -47,4 +47,4 @@ class Hamburguesa extends React.Component{
       
   }
 }
-export default Hamburguesa;
+export default Pizza;

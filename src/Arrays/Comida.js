@@ -21,3 +21,25 @@ export const Pizza=[
     Ingrediente: 'Jamon'
   } 
 ];
+export const kebab=[
+  {
+    Ingrediente:'Carne'
+  },
+  {
+    Ingrediente:'Ensalada'
+  },
+  {
+    Ingrediente: 'Patatas'
+  } 
+];
+export const hamburguesa=[
+  {
+    Ingrediente:'Queso'
+  },
+  {
+    Ingrediente:'Pan'
+  },
+  {
+    Ingrediente: 'Hamburguesa'
+  } 
+];

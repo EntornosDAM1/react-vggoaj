@@ -1,10 +1,10 @@
 import React from 'react';
 import React from 'react';
-import {Pizza,Comida1} from '../Arrays/Comida';
-import { Card, Container, Table, Row, Col } from 'react-bootstrap';
+import {Comida1, kebab} from '../Arrays/Comida';
+import {  Container, Table, Row, Col } from 'react-bootstrap';
 
 
-class ArchivoJugar extends React.Component{
+class Kebabs extends React.Component{
   render (){
     return(
       <div> 
@@ -25,7 +25,7 @@ class ArchivoJugar extends React.Component{
                 </thead>
                 <tbody>
                 {
-            Pizza.map((item) =>{
+            kebab.map((item) =>{
                return (
                  <td>
                    <tr>
@@ -47,4 +47,4 @@ class ArchivoJugar extends React.Component{
       
   }
 }
-export default ArchivoJugar;
+export default Kebabs;

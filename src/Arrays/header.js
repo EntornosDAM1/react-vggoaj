@@ -6,19 +6,19 @@ export const header=[
   {
     id:1,
     title:'Pizzas',
-    path: '/',
+    path: '/ArchivoJugar',
     component:ArchivoJugar,
   },
   {
     id:2,
     title:'Hamburguesas',
-    path: '/',
+    path: '../components/Hamburguesas',
     component:Hamburguesas,
   },
   {
-    id:3,
-    title:'Kebabs',
-    path: '/',
-    component:Kebabs,
+    id: 3,
+    path: '/Kebabs',
+    title: 'Kebab',
+    component: Kebabs,
   }
 ];

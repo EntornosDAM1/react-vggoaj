@@ -1,6 +1,7 @@
 import React from 'react';
 import { header } from '../Arrays/header';
 import { Link } from 'react-router-dom';
+import '../css/header.css';
 
 class Header extends React.Component {
   constructor(props) {
@@ -19,7 +20,9 @@ class Header extends React.Component {
       <nav className="header-navbar">
         <div className="navbar-logo">
           <img className="logo-image" src="https://eu01.edcwb.com/buscador/img/centros/logogrande/7348-a9c730d6b2b644f5b9910364ba6af277.jpg"/>
-          <ul className={this.state.clicked ? 'navbar-menu active' : 'navbar-menu'}>
+         
+        </div>
+        <ul className={this.state.clicked ? 'navbar-menu active' : 'navbar-menu'}>
           {header.map((item) => {
             return (
                 <li key={item.id}>
@@ -30,8 +33,6 @@ class Header extends React.Component {
             )
           })}
           </ul>
-        </div>
-        
       </nav>
     );
   }
